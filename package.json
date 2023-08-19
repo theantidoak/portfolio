@@ -14,15 +14,15 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/OakHarbor/Starter-Kit-v4-Eleventy-.git"
+		"url": "git+https://github.com/theantidoak/portfolio.git"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC", 
 	"bugs": {
-		"url": "https://github.com/OakHarbor/Starter-Kit-v4-Eleventy-/issues"
+		"url": "https://github.com/theantidoak/portfolio/issues"
 	},
-	"homepage": "https://github.com/OakHarbor/Starter-Kit-v4-Eleventy-#readme",
+	"homepage": "https://github.com/theantidoak/portfolio#readme",
 	"devDependencies": {
 		"@11ty/eleventy": "^2.0.1",
 		"@11ty/eleventy-navigation": "^0.3.5"
