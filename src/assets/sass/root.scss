@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #1a1a2d;
+
+}
+
+@font-face {
+  font-family: "Proza";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("/assets/fonts/ProzaLibre-Regular.woff2") format("woff2"),
+    url("/assets/fonts/ProzaLibre-Regular.woff") format("woff");
+}
+
+.page-container {
+  background-color: #1a1a2d;
+  height: 100%;
+  width: 100%;
+}
+
+.skip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1111111;
+}
+
+// HEADER
+
+.header {
+  color: #fff;
+
+  &__container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  &__nav {
+    margin: .5rem 0;
+    padding: .5rem 1rem;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 3rem;
+
+      li {
+        letter-spacing: 3px;
+        padding: .25rem .75rem;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+        transition: transform ease .75s;
+
+        span {
+          position: relative;
+          z-index: 2;
+        }
+
+        .item-wrapper {
+          width: 96%;
+          height: 90%;
+          background-color: white;
+          position: absolute;
+          top: 0;
+          transform: translate(calc(-100% - .65rem));
+          transition: all ease .75s;
+          z-index: 1;
+          border-color: #dbdbdb;
+          border-width: 1px;
+        }
+      }
+
+      li:hover {
+        color: #1a1a2d;
+        transform: scale(1.1);
+        padding-bottom: .15rem;
+        
+        .item-wrapper {
+          background-color: white;
+          transform: translateX(-.75rem);
+          box-shadow: 0 5px 15px #fff;
+
+        }
+      }
+    }
+  }
+}
+
+.logo {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+  align-items: center;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  &__name {
+    font-size: clamp(1.1rem, 5vw, 2rem);
+    text-align: center;
+    font-family: "Proza";
+    letter-spacing: 9px;
+  }
+
+  .job-title {
+    font-size: clamp(9px, 2.5vw, 12px);
+    letter-spacing: clamp(5px, 2.5vw, 16px);
+    font-family: "Proza";
+    text-align: center;
+  }
+}
