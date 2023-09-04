@@ -1,0 +1,45 @@
+---
+title: "About Me"
+description: "About Tommy Doak"
+preloadImg: '/assets/images/portfolio/about-img.jpg'
+permalink: "about/"
+eleventyNavigation:
+    key: About
+    order: 103
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+  <link rel="stylesheet" href="/css/about.css">
+{% endblock %}
+
+{% block body %}
+
+<section class="about page-container">
+  <div class="about__img-container">
+    <img class="about__img" aria-hidden="true" decoding="async" src="/assets/images/portfolio/about-img.jpg" alt="Tommy Doak" loading="lazy">
+    <svg class="about__clip-path" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482 642" preserveAspectRatio="none">
+      <defs>
+        <mask id="mask">
+          <rect x="0" y="0" width="100%" height="100%" fill="white"/>
+          <circle cx="45%" cy="27.5%" r="30%" fill="black"/>
+        </mask>
+      </defs>
+      <rect x="0" y="0" width="100%" height="100%" fill="rgba(0, 0, 0, 0.6)" mask="url(#mask)"/>
+    </svg>
+    <p class="about__photo-origin">Moscow, Russia</p>
+  </div>
+  <div class="about__bio-container">
+    <h2 class="about__bio-title">The Role</h2>
+    <p class="about__bio-text">Tommy Doak is a front-end web developer in Paris, France. He currently contracts for an American national college and university ranking start-up called <a href="https://academicinfluence.com/about/our-team/tommy-doak">Academicinfluence.com</a>, where he handles UX, UI, video and image content, the creation of website tools, database management, and digital marketing campaigns.</p>
+      
+    <h2 class="about__bio-title">The Backstory</h2>
+    <p class="about__bio-text">Tommy grew up in Chattanooga, Tennessee and graduated from the University of Georgia with a BA in Marketing. He worked as an alarm technician in Halifax, Nova Scotia and door-to-door salesman in Chicago before moving to Barcelona to complete a Teach English as a Foreign Language (TEFL) course. He taught English as Second Lanaguage (ESL) at a language school in Shanghai and public schools in Ho Chi Minh City. He also taught ESL online for a Chinese company while living in Colombia, Mexico, Germany, and France. Between and alongside jobs in the ESL industry, Tommy worked in a salmon fishery in King Salmon, a deckhand on two commercial fishing vessels in Alaska, a headhunter for a cruise line recruiting agency, and a construction laborer in Antarctica. After Antarctica, Tommy moved to Paris to complete a Master’s degree in digital strategy management from Grenoble Ecole de Management where he found his passion for web development.</p>
+
+    <h2 class="about__bio-title">The Impact</h2>
+    <p class="about__bio-text">As you probably guessed from Tommy's backstory, he loves adventure, challenges, and traveling. All three of those led him to a career in development. Tommy's creativity, influenced by cultuaral experiences, his problem-solving determination, influenced by the challenges of creating a life in a foreign country, and his pursuit in a new field, influenced by his desire to learn, has positively impacted Tommy's desire to learn and take pride in his career accomplishments.</p>
+  </div>
+</section>
+
+{% endblock %}

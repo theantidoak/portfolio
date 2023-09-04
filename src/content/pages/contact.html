@@ -1,0 +1,27 @@
+---
+title: "Contact Me"
+description: "Contact Tommy Doak"
+permalink: "contact/"
+eleventyNavigation:
+    key: Contact
+    order: 104
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+  <link rel="stylesheet" href="/css/contact.css">
+{% endblock %}
+
+{% block body %}
+
+<section class="contact">
+  <h2>Contact Info</h2>
+  <ul class="contact__list">
+    <li class="contact__list-item">Email: doak.dev@gmail.com</li>
+    <li class="contact__list-item">Whatsapp (International): +49 1745 855970</li>
+    <li class="contact__list-item">Phone (France): +33 7 51 23 77 94</li>
+  </ul>
+</section>
+
+{% endblock %}

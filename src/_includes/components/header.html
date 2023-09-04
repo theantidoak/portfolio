@@ -8,11 +8,14 @@
       <span class="job-title">DEVELOPER & DESIGNER</span>
     </div>
     <nav class="header__nav">
-      <ul>
-        <li><div class="item-wrapper"></div><span>Resume</span></li>
-        <li><div class="item-wrapper"></div><span>Projects</span></li>
-        <li><div class="item-wrapper"></div><span>About</span></li>
-        <li><div class="item-wrapper"></div><span>Contact</span></li>
+      <ul class="header__nav-list">
+        {% set navPages = collections.all | eleventyNavigation %}
+        {% for entry in navPages %}
+          <li class="header__nav-list-item">
+            <div class="header__nav-list-item-wrapper"></div>
+            <a href="{{ entry.url }}" class="header__nav-list-item-link {% if entry.url == page.url %} cs-active {% endif %}"> {{ entry.key }} </a>
+          </li>
+        {% endfor %}
       </ul>
     </nav>
   </div>
