@@ -1,0 +1,48 @@
+* {
+  color: white;
+}
+
+.tech {
+  color: white;
+  width: min(100%, 800px);
+  margin: 0 auto;
+
+  h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+    column-gap: 1rem;
+    row-gap: 1.5rem;
+    align-items: center;
+    list-style: none;
+  }
+
+  &__list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    height: 4rem;
+
+    i {
+      font-size: 2rem;
+      display: flex;
+      flex-direction: column;
+
+      svg {
+        height: 2rem;
+        width: 2rem;
+      }
+    }
+  }
+
+  .nunjucks-icon {
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+  }
+}
